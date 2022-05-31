@@ -1,0 +1,8 @@
+/.github/*.md
+/.next/
+/build/
+/coverage/
+/out/
+/public/webviewer/
+/src/generated/
+/package-lock.json
