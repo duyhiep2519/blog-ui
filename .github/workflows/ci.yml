@@ -19,7 +19,6 @@ jobs:
               key: node-modules-dot-cache-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}-${{ github.run_id }}
               restore-keys: |
                  node-modules-dot-cache-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}-
-         - run: npm ci --prefer-offline --no-audit
          - run: npm run eslint
          - run: npm run prettier
          - run: npm test
