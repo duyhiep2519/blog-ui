@@ -1,16 +1,16 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "monthly"
-    reviewers:
-      - "duyhiep2519"
-    allow:
-      - dependency-name: "@ckeditor/ckeditor5-react"
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "monthly"
-    reviewers:
-      - "duyhiep2519"
+   - package-ecosystem: 'npm'
+     directory: '/'
+     schedule:
+        interval: 'monthly'
+     reviewers:
+        - 'duyhiep2519'
+     allow:
+        - dependency-name: '@ckeditor/ckeditor5-react'
+   - package-ecosystem: 'github-actions'
+     directory: '/'
+     schedule:
+        interval: 'monthly'
+     reviewers:
+        - 'duyhiep2519'
