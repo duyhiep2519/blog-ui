@@ -22,7 +22,9 @@
       "test": "react-scripts test",
       "eject": "react-scripts eject",
       "prettier:fix": "prettier --write .",
-      "prettier": "prettier --check ."
+      "prettier": "prettier --check .",
+      "eslint": "eslint --ext .js,.jsx,.ts,.tsx --cache --cache-location=node_modules/.cache/eslint --cache-strategy content .",
+      "eslint:fix": "npm run eslint -- --fix"
    },
    "eslintConfig": {
       "extends": [
