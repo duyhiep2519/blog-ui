@@ -1,0 +1,14 @@
+.grid-layout {
+   padding: 0px 20px;
+   display: grid;
+   gap: 30px;
+}
+.grid-column {
+   display: flex;
+   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+   .grid-layout {
+      grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr);
+   }
+}

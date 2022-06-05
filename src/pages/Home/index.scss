@@ -1,0 +1,38 @@
+.home {
+   .home__about {
+      .home__about-img {
+         img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border: 0;
+            width: 581px;
+            aspect-ratio: auto 581 / 470;
+         }
+      }
+      .home__about-text {
+         justify-content: center;
+         h1 {
+            line-height: calc(2px + 2ex + 2px);
+            font-size: 3rem;
+            margin: 5px 0;
+         }
+         strong {
+            color: var(--purple-dark);
+         }
+         h2 {
+            margin: 5px 0;
+            font-size: 2rem;
+            line-height: calc(2px + 2ex + 2px);
+         }
+         p {
+            font-size: 16px;
+            line-height: calc(2px + 2ex + 2px);
+            font-weight: 300;
+         }
+         button {
+            max-width: 200px;
+         }
+      }
+   }
+}

@@ -1,16 +1,23 @@
 version: 2
 updates:
+   # security updates to all npm packages
    - package-ecosystem: 'npm'
      directory: '/'
      schedule:
-        interval: 'monthly'
+        interval: 'daily'
      reviewers:
         - 'duyhiep2519'
-     allow:
-        - dependency-name: '@ckeditor/ckeditor5-react'
+     ignore:
+        - dependency-name: '*'
+          update-types:
+             - 'version-update:semver-major'
+             - 'version-update:semver-minor'
+             - 'version-update:semver-patch'
+
    - package-ecosystem: 'github-actions'
      directory: '/'
      schedule:
-        interval: 'monthly'
+        interval: 'weekly'
+        day: 'wednesday'
      reviewers:
         - 'duyhiep2519'
