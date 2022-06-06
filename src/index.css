@@ -32,4 +32,5 @@ ul {
    --dark: rgb(15 23 42);
 
    --border-radius: 10px;
+   --tooltip-zIndex: 1000;
 }

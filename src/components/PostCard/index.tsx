@@ -1,7 +1,10 @@
 import { FeaturedPost } from '@types';
 import clsx from 'clsx';
 import { Chip } from 'components/ui/Chip';
+import { dateFromTimestamp } from 'utils/times';
+import { FaUser, FaCalendar, FaReadme } from 'react-icons/fa';
 import './index.scss';
+import Tooltip from 'components/ui/Tooltip';
 
 interface Props extends FeaturedPost {
    className?: string;
@@ -28,10 +31,24 @@ export const PostCard = (props: Props) => {
          <div className="postCard__content mt-1">
             <div className="postCard__title">{props.title}</div>
             <ul className="postCard__list d-flex mt-1 mb-1">
-               <li className="mr-1">{props.author}</li>
-               <li className="mr-1">{props.timeStamp}</li>
+               <Tooltip text={`Tác giả : ${props.author}`}>
+                  <li className="mr-1">
+                     <FaUser /> {props.author}
+                  </li>
+               </Tooltip>
+               <Tooltip text="Ngày đăng">
+                  <li className="mr-1">
+                     <FaCalendar /> {dateFromTimestamp(props.timeStamp)}
+                  </li>
+               </Tooltip>
+
                {props.timeToRead && (
-                  <li className="mr-1">{props.timeToRead}</li>
+                  <Tooltip
+                     text={`Thời gian đọc khoảng ${props.timeToRead} phút`}>
+                     <li className="mr-1 flex-center">
+                        <FaReadme /> {props.timeToRead}
+                     </li>
+                  </Tooltip>
                )}
             </ul>
             <div className="postCard__text">{props.description}</div>

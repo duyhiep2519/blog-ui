@@ -22,6 +22,19 @@
          font-weight: 500;
       }
       .postCard__list {
+         li {
+            padding: 10px;
+            border-radius: 5px;
+            background-image: linear-gradient(
+               to right top,
+               rgb(106, 90, 249),
+               rgb(214, 110, 253)
+            );
+            cursor: pointer;
+            svg {
+               margin-right: 5px;
+            }
+         }
       }
    }
 }
