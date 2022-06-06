@@ -10,7 +10,7 @@ export const FEATURED_POST: FeaturedPost[] = [
       timeToRead: 5,
       timeStamp: '2022-06-05T02:47:10+0000',
       author: 'Hieptd',
-      category: ['Programming']
+      category: ['Programming', 'Github']
    },
    {
       title: 'Artificial Intelligence and Robotics In A Nutshell',

@@ -1,0 +1,27 @@
+.postCard {
+   background-color: var(--card-background);
+   border-radius: var(--border-radius);
+   .postCard__picture {
+      img {
+         max-width: 100%;
+         height: auto;
+         vertical-align: middle;
+         border: 0;
+         width: 581px;
+         aspect-ratio: auto 581 / 470;
+         border-radius: var(--border-radius);
+      }
+      .postCard__category {
+         top: 10px;
+         left: 10px;
+      }
+   }
+   .postCard__content {
+      .postCard__title {
+         font-size: 1.5rem;
+         font-weight: 500;
+      }
+      .postCard__list {
+      }
+   }
+}

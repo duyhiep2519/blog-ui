@@ -1,12 +1,21 @@
 * {
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
-   background-color: var(--background-color);
+
    color: var(--white);
+}
+body {
+   background-color: var(--background-color);
+}
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
 }
 
 :root {
    --background-color: rgb(15 23 42);
+   --card-background: rgb(50, 58, 70);
    --primary: #455af7;
    --secondary: #13d2b8;
    --purple: #bd93f9;
@@ -21,4 +30,6 @@
    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
    --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
    --dark: rgb(15 23 42);
+
+   --border-radius: 10px;
 }

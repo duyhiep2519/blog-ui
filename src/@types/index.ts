@@ -1,6 +1,6 @@
 export interface FeaturedPost {
    title: string;
-   description?: string;
+   description: string;
    imageUrl: string;
    to: string;
    timeToRead?: number;
