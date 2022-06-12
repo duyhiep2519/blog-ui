@@ -27,11 +27,30 @@ const Home = () => {
 
          <MainLayout>
             <div>
-               <h2 className="title-border">Recent Post</h2>
-               <div className="home__featuredPost grid-layout">
-                  {POSTS.map((item, index) => (
-                     <PostCard key={index} {...item} />
-                  ))}
+               {/* Featured Post */}
+               {/* <div className="home__feature">
+                  <h2 className="title-border">Featured Post</h2>
+
+                  <div className="home__feature-content">
+                     <div className="bestPost">
+                        <PostCard {...POSTS[0]} key="best top" />
+                     </div>
+                     <div className="listPosts">
+                        {POSTS.map((post) => (
+                           <PostCard {...post} key={post.id} />
+                        ))}
+                     </div>
+                  </div>
+               </div> */}
+
+               {/* Recent Post */}
+               <div className="home__recent">
+                  <h2 className="title-border">Recent Post</h2>
+                  <div className="home__featuredPost grid-layout">
+                     {POSTS.map((item, index) => (
+                        <PostCard key={index} {...item} />
+                     ))}
+                  </div>
                </div>
             </div>
          </MainLayout>

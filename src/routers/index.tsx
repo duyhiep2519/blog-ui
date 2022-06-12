@@ -17,10 +17,12 @@ export const MainRouter = () => {
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center'
-               }}>
+               }}
+            >
                <BallsLoading />
             </div>
-         }>
+         }
+      >
          <Routes>
             {MyRoutes.map((route, index) => {
                return (

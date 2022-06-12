@@ -44,7 +44,8 @@ export const PostCard = (props: Props) => {
 
                {props.timeToRead && (
                   <Tooltip
-                     text={`Thời gian đọc khoảng ${props.timeToRead} phút`}>
+                     text={`Thời gian đọc khoảng ${props.timeToRead} phút`}
+                  >
                      <li className="mr-1 flex-center">
                         <FaReadme /> {props.timeToRead}
                      </li>

@@ -12,7 +12,8 @@ export const Chip = (props: ChipProps) => {
    return (
       <div
          className={clsx('chip', className)}
-         onClick={onClick ? onClick : () => {}}>
+         onClick={onClick ? onClick : () => {}}
+      >
          <span className="chip__label">{label}</span>
       </div>
    );

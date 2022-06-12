@@ -36,4 +36,20 @@
          }
       }
    }
+
+   // home__feature
+   .home__feature {
+      .home__feature-content {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 20px;
+         grid-template-areas: 'bestPost' 'listPosts';
+         .bestPost {
+            grid-area: bestPost;
+         }
+         .listPosts {
+            grid-area: listPosts;
+         }
+      }
+   }
 }
