@@ -1,7 +1,8 @@
 import devIcon from 'assets/icons/devIcon.svg';
 import { SVGIcon } from 'components/icons';
 import { PostCard } from 'components/PostCard';
-import { FEATURED_POST } from 'fakeData/FeaturedPost';
+import { POSTS } from 'fakeData/posts';
+import { MainLayout } from 'layouts/MainLayout';
 import './index.scss';
 
 const Home = () => {
@@ -23,21 +24,17 @@ const Home = () => {
                <button className="button">Know About Me</button>
             </div>
          </div>
-         {/* Featured Post */}
-         <div className="home__featuredPost">
-            <h2>Featured Post </h2>
-            <div className="home__featuredPost-post grid-layout">
-               {FEATURED_POST.map((item, index) => (
-                  <div className="grid-column">
-                     <PostCard
-                        {...item}
-                        key={index}
-                        className="margin-center p-2"
-                     />
-                  </div>
-               ))}
+
+         <MainLayout>
+            <div>
+               <h2 className="title-border">Recent Post</h2>
+               <div className="home__featuredPost grid-layout">
+                  {POSTS.map((item, index) => (
+                     <PostCard key={index} {...item} />
+                  ))}
+               </div>
             </div>
-         </div>
+         </MainLayout>
       </div>
    );
 };

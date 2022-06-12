@@ -1,14 +1,13 @@
 .postCard {
    background-color: var(--card-background);
    border-radius: var(--border-radius);
+   padding: 20px;
    .postCard__picture {
       img {
-         max-width: 100%;
          height: auto;
          vertical-align: middle;
          border: 0;
-         width: 581px;
-         aspect-ratio: auto 581 / 470;
+         max-width: 100%;
          border-radius: var(--border-radius);
       }
       .postCard__category {
@@ -18,10 +17,14 @@
    }
    .postCard__content {
       .postCard__title {
-         font-size: 1.5rem;
+         font-size: 1.4rem;
          font-weight: 500;
+         min-height: 50px;
+         display: flex;
+         align-items: center;
       }
       .postCard__list {
+         justify-content: flex-start;
          li {
             padding: 10px;
             border-radius: 5px;
@@ -31,9 +34,30 @@
                rgb(214, 110, 253)
             );
             cursor: pointer;
+            font-size: 0.8rem;
             svg {
                margin-right: 5px;
             }
+         }
+      }
+      .postCard__text {
+         font-size: 1rem;
+         line-height: 1.5;
+         margin: 16px 0;
+         font-weight: 500;
+      }
+   }
+}
+
+@media (max-width: 995px) {
+   .postCard {
+      .postCard__content {
+         .postCard__title {
+            font-size: 1.1 rem;
+            font-weight: 500;
+         }
+         .postCard__text {
+            font-size: 14px;
          }
       }
    }

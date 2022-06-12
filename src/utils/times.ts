@@ -58,7 +58,7 @@ export function dateFromTimestamp(dateString: string): string {
    const parsedDate = new Date(dateString);
 
    return isValid(parsedDate)
-      ? format(parsedDate, 'd, LLL-yyyy, h:mm a', {
+      ? format(parsedDate, 'd, LLL-yyyy', {
            locale: vi
         })
       : '';

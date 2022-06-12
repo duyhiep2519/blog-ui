@@ -1,0 +1,49 @@
+.mainLayout {
+   display: grid;
+   //template-columns content 8/12 and sidebar 4/12
+   grid-template-columns: 66% 34%;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 'content sidebar';
+   .content {
+      grid-area: content;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'postCard postCard';
+      .postCard {
+         grid-area: postCard;
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr;
+         grid-template-areas: 'picture content';
+      }
+   }
+   aside {
+      grid-area: sidebar;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      background-color: var(--pink);
+   }
+}
+
+@media (max-width: 995px) {
+   .mainLayout {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 'content' 'sidebar';
+      .mainLayout__content {
+         grid-area: content;
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr;
+      }
+      aside {
+         grid-area: sidebar;
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr;
+         background-color: var(--pink);
+      }
+   }
+}

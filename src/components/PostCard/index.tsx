@@ -30,7 +30,7 @@ export const PostCard = (props: Props) => {
          </div>
          <div className="postCard__content mt-1">
             <div className="postCard__title">{props.title}</div>
-            <ul className="postCard__list d-flex mt-1 mb-1">
+            <ul className="postCard__list d-flex mt-1 mb-1 flex-center">
                <Tooltip text={`Tác giả : ${props.author}`}>
                   <li className="mr-1">
                      <FaUser /> {props.author}

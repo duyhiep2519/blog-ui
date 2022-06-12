@@ -142,6 +142,12 @@
 .w-50 {
    width: 50%;
 }
+.w-60 {
+   width: 60%;
+}
+.w-70 {
+   width: 70%;
+}
 
 .max {
    &-w-100 {
@@ -223,4 +229,15 @@
    &-0 {
       margin: 0 !important;
    }
+}
+
+.title-border {
+   padding: 10px 20px;
+   text-decoration-line: underline;
+   text-decoration-style: wavy;
+   text-decoration-color: #6a5af9;
+   text-decoration-thickness: 2px;
+   text-underline-offset: 10px;
+   line-height: calc(2px + 2ex + 2px);
+   font-size: 2rem;
 }

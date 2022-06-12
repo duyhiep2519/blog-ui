@@ -1,7 +1,8 @@
 import { FeaturedPost } from '@types';
 
-export const FEATURED_POST: FeaturedPost[] = [
+export const POSTS: FeaturedPost[] = [
    {
+      id: '1',
       title: 'Github Repository Controls',
       description: 'A simple way to control your Github repositories.',
       imageUrl:
@@ -13,6 +14,7 @@ export const FEATURED_POST: FeaturedPost[] = [
       category: ['Programming', 'Github']
    },
    {
+      id: '2',
       title: 'Artificial Intelligence and Robotics In A Nutshell',
       description: 'A simple way to control your Github repositories.',
       imageUrl:
@@ -24,6 +26,7 @@ export const FEATURED_POST: FeaturedPost[] = [
       category: ['Programming']
    },
    {
+      id: '3',
       title: 'Drone Software and Development',
       description: 'A simple way to control your Github repositories.',
       imageUrl:
@@ -35,6 +38,7 @@ export const FEATURED_POST: FeaturedPost[] = [
       category: ['Drone', 'Youtube']
    },
    {
+      id: '4',
       title: 'Artificial Intelligence and Robotics In A Nutshell',
       description: 'A simple way to control your Github repositories.',
       imageUrl:
@@ -46,6 +50,7 @@ export const FEATURED_POST: FeaturedPost[] = [
       category: ['Programming']
    },
    {
+      id: '5',
       title: 'Github Repository Controls',
       description: 'A simple way to control your Github repositories.',
       imageUrl:
@@ -57,6 +62,7 @@ export const FEATURED_POST: FeaturedPost[] = [
       category: ['Programming']
    },
    {
+      id: '6',
       title: 'Artificial Intelligence and Robotics In A Nutshell',
       description: 'A simple way to control your Github repositories.',
       imageUrl:
@@ -68,6 +74,7 @@ export const FEATURED_POST: FeaturedPost[] = [
       category: ['Programming']
    },
    {
+      id: '7',
       title: 'Drone Software and Development',
       description: 'A simple way to control your Github repositories.',
       imageUrl:
@@ -79,6 +86,7 @@ export const FEATURED_POST: FeaturedPost[] = [
       category: ['Drone']
    },
    {
+      id: '8',
       title: 'Artificial Intelligence and Robotics In A Nutshell',
       description: 'A simple way to control your Github repositories.',
       imageUrl:
